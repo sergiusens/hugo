@@ -35,5 +35,6 @@ parts:
     install: |
       strip --remove-section=.comment --remove-section=.note $SNAPCRAFT_PART_INSTALL/bin/hugo
     after: [go]
+    build-attributes: [no-system-libraries]
   go:
     source-tag: go1.10
